@@ -1,0 +1,32 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme (default) */
+body.light-theme {
+  background-color:yellow;
+  color: #000000;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #40c4f4;
+  color: #0c0d0e;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+

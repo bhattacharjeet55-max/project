@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            padding: 10px 20px;
+        }
+        .logo{
+            color: rgb(250, 250, 245);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        img{
+            border-radius: 50%;
+        }
+        .menu{
+            display: flex;
+            font-size: 40px;
+            cursor: pointer;
+            color: rgb(239, 240, 236);
+            gap: 80px;
+        }
+        .sidebar{
+            height: 100vh;
+            width: 135px;
+            position: fixed;
+            background-color: blue;
+        }
+        .sidebar div{
+            padding: 15px 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .main{
+            margin-left: 300px;
+            padding: 20px;
+        }
+        .grid-container{
+            display: grid;
+            margin-top: 50px;
+            margin-left: 10%;
+            grid-template-columns: repeat(4, 1fr);
+            
+            grid-gap: 20px; /*Gap between grid item */
+        }
+        .grid-item{
+            background-color: #b392e4;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">FLIPKART</div>
+        <div class="menu">
+        <div>HOME</div>
+        <div>ABOUT</div>
+        <div>SERVICES</div>
+        <div>CONTACT</div>    
+        </div>
+    </div>
+     <div class="sidebar">
+        <div>Dashboard</div>
+        <div>Profile</div>
+        <div>Setting</div>
+        <div>Logout</div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item"><a href="https://www.ea.com/" target="_blank">ELECTRONIC</a></div>
+        <div class="grid-item"><a href="https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY" target="_blank">GROCERY</a></div>
+        <div class="grid-item"><a href="https://www.flipkart.com/q/mens-clothing" target="_blank">MEN SECTION</a></div>
+        <div class="grid-item"><a href="https://www.flipkart.com/womens-clothing/pr?sid=2oq,c1r" target="_blank">WOMEN SECTION</a></div>
+        <div class="grid-item"><a href="https://www.flipkart.com/q/kids-wear" target="_blank"> KIDS SECTION</a> </div>
+        <div class="grid-item"><a href="https://www.flipkart.com/q/earbud" target="_blank">EARBUDS</a></div>
+        <div class="grid-item"><a href="https://www.flipkart.com/mobiles/smartphones~type/pr?sid=tyy,4io" target="_blank">SMARTPHONES</a></div>
+        <div class="grid-item"><a href="https://www.flipkart.com/laptops-store" target="_blank">LAPTOP</a></div>
+    </div>
+     
+</body>
+</html>
